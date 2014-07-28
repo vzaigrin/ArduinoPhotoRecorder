@@ -1,8 +1,9 @@
-## Arduino Photo Fixator 
+## Arduino Photo Recorder
 
-This is Standalone Photo Fixator based on an Arduino.
+This is Standalone Photo Recorder based on an Arduino.
 
 Base module is Adafruit MENTA - Mint Tin Arduino Compatible Kit (https://www.adafruit.com/products/795) from Adafruit.
+
 It also use Weatherproof TTL Serial JPEG Camera (https://www.adafruit.com/products/613), DS1307 Real Time Clock (https://www.adafruit.com/product/264) and MicroSD card breakout board (https://www.adafruit.com/products/254).
 
 DS1307 is connected by I2C:
