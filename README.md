@@ -16,7 +16,7 @@ MicroSD is connected by SPI:
 * DI to digital 11
 * CS to digital 10
 
-Camera is connected to Serial:
+Camera is connected to hardware serial (digital 0 & 1):
 * RX from camera to TX on Arduino
 * TX from camera through 10K OM to RX on Arduino
 * TX from camera through 10K OM to Ground.
