@@ -15,9 +15,11 @@ MicroSD is connected by SPI:
 * CS to digital 10
 
 Camera is connected to Serial:
-* TX from camera to RX on Arduino
-* RX from camera through 10K OM to TX on Arduino
-* RX from camera through 10K OM to Ground.
+* RX from camera to TX on Arduino
+* TX from camera through 10K OM to RX on Arduino
+* TX from camera through 10K OM to Ground.
+
+We use the 10K resistor divider. The camera's serial data pins are 3.3v logic and we divide the 5V down so that its 2.5V.
 
 Camera has motion detection and can take a snapshot at this time.
 We use date and time information from DS1307 to know when we take a snapshot.
