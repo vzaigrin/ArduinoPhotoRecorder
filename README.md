@@ -17,9 +17,9 @@ MicroSD is connected by SPI:
 * CS to digital 10
 
 Camera is connected to hardware serial (digital 0 & 1):
-* RX from camera to TX on Arduino
-* TX from camera through 10K OM to RX on Arduino
-* TX from camera through 10K OM to Ground.
+* RX from camera through 10K resistor to TX on Arduino (digital 1)
+* RX from camera through 10K resistor to Ground.
+* TX from camera to RX on Arduino (digital 0)
 
 We use the 10K resistor divider. The camera's serial data pins are 3.3v logic and we divide the 5V down so that its 2.5V.
 
