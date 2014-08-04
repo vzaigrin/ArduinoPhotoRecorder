@@ -18,9 +18,8 @@ void setup() {
   Wire.begin();
   RTC.begin();
   pinMode(10, OUTPUT);
-  if (!SD.begin(chipSelect)) return;
-  if (!cam.begin()) return;
-  if (!cam.getVersion()) return;
+  SD.begin(chipSelect);
+  cam.begin();
   cam.setImageSize(VC0706_640x480);
   cam.setMotionDetect(true);
 }
